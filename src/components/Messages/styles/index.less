@@ -1,0 +1,93 @@
+// mixins
+.border-top {
+  border: solid 1px #CCC;
+  border-left: none;
+  border-bottom: none;
+  border-right: none;
+}
+
+.remove-style {
+  border: none;
+  background-color: transparent;
+}
+
+// classses
+.messageBox {
+  border: solid 1px #BBB;
+  margin: 4em 4em;
+  border-radius: 1rem;
+  box-shadow: 3px 3px 5px #BBB;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.message {
+  padding: 1em 1em 1em 2em;
+}
+
+.messageTimestamp {
+  font-weight: 100;
+  font-size: .8em;
+  color: #666;
+}
+
+.messageWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start
+}
+
+.score {
+  padding: 1em 1em 1em 2em;
+  font-weight: 800;
+  font-size: 1.2em;
+  align-content: center;
+  min-width: 2em;
+  max-width: 2em;
+  text-align: center;
+  line-height: 3em;
+}
+
+.score:hover {
+  transition: .1s;
+  font-size: 1.3em;
+  cursor: pointer;
+}
+
+.postFieldWrapper {
+  border: solid 1px #BBB;
+  margin: 1em 4em 1em 4em;
+  border-radius: 1rem;
+  box-shadow: 3px 3px 5px #BBB;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.postTitle {
+  .remove-style();
+  padding: 1em 1em 1em 20px;
+  font-size: 1.2em;
+}
+
+.postBody {
+  .remove-style();
+  .border-top();
+  padding: 1em 1em 1em 20px;
+}
+
+.postSubmit {
+  .remove-style();
+  .border-top();
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  padding: 1em;
+}
+
+.postSubmit:hover {
+  cursor: pointer;
+  font-weight: 600;
+  transition: .2s;
+  background-color: #EEE;
+}
